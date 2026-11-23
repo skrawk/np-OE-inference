@@ -13,6 +13,19 @@
 ### Note: In this code, the dataset A is the non-probability sample, while
 ###       the dataset B represents the probability sample.
 
+### Settings for the simulation can be changed as required:
+### Lines 278-280: Bootstrap interations, population size, and number of simulation iterations
+### Lines 300-302: Correlation between Y and X*beta, sample size of A, and sample size of B
+### Line 306: Number of multiple imputes when designing optimal sample
+
+
+######################################################################
+### The following R packages will need to be installed for this code to run
+### The packages are: xtable, VIM, sampling, foreach, doParallel, doRNG
+### Note that these packages will also require installation of additional
+### package dependencies.
+######################################################################
+
 rm(list=ls())
 
 library("xtable")
