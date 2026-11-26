@@ -9,10 +9,12 @@ Settings for the simulation can be changed as required:
 * Lines 300-302: Correlation between $Y$ and $X\beta$, sample size of the probability and non-probability samples
 * Line 306: Number of multiple imputes when producing results for an optimally designed probability sample
 
-To obtain results for Tables 5.1 and 5.2 in the Ang et al (2026) paper, you will need to run the code multiple times under different settings:
-* Set the correlation to 0.3 or 0.7 as needed
+To obtain results for Tables 5.1, 5.2, A.1 and A.2 in the Ang et al (2026) paper, you will need to run the code multiple times under different settings:
+* Set the correlation to 0.3 (for Tables 5.1 and 5.2) or 0.7 (for Tables A.1 and A.2) as needed
 * Set the sample size of the non-probability sample to the values 750, 2,000, etc as needed
 * Set the probability sample size to 500 or 5,000 as needed (Note: For the smaller probability sample, you will run into issues with insufficient sample for the KW approach, so you will need to comment out this method in the code)
+
+For the paper, the population size was set to 200,000 and number of simulations was 2,000.  The bootstrap variance algorithm for the EM-based approach used 200 iterations.
 
 The overlap results in Table 5.3 of the paper can be obtained for each simulation via the *overlap* variable.
 
